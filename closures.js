@@ -212,14 +212,13 @@ function secretNumber() {
 */
 
 function timeOutCounter() {
+  function logCount(i){
+    setTimeout(function() {
+      console.log(i);
+    }, i * 1000);
+  }
   for (var i = 0; i <= 5; i++) {
       logCount(i)
   }
 }
 timeOutCounter();
-
-function logCount(i){
-  setTimeout(function() {
-    console.log(i);
-  }, i * 1000);
-}
